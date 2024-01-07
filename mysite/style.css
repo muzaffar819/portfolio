@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+}
+
+.sidebar{
+    position: absolute;
+    background-color: rgb(180, 177, 177);
+    height: 100vh;
+    transition: trasform 0.3 ease-in;
+}
+
+.sidebarGo{
+    transform: translate(-175px, 0px);
+    position: absolute;
+}
+
+#sideimg{
+    display: none;
+    width: 100px;
+    border-radius: 100%;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hamburger{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.ham{
+    margin: auto 10px;
+}
+
+.cross{
+    margin: auto 120px;
+    cursor: pointer;
+}
+
+.sidebar nav{
+    padding: 25px;
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 25px;
+    padding: 20px 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+.main{
+    width: 80vw;
+}
+
+.infocontainer, .formcontainer{
+    display: flex;
+    width: 85vw;
+    height: 50vh;
+    margin: 125px auto;
+    justify-content: space-around;
+}
+
+.devinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.hello{
+    font-size: 40px;  
+}
+
+.name{
+    display: inline-block;
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.about{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.moreabout{
+    font-size: 17px;
+    margin-top: 7px;
+}
+
+.buttons{
+    margin-top: 35px;
+}
+
+.btn{
+    padding: 7px 14px;
+    border-radius: 25px;
+    margin: 0 3px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: transparent;
+    border: 1px solid #007bff;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.btn:hover{
+    border: transparent;
+    background-color:  dodgerblue;
+    color: #fff;
+}
+
+.devpic img{
+    height: 50vh;
+    border-radius: 100%;
+}
+
+
+/*********************************About me ********************************/
+
+.aboutcontainer{
+    width: 100vw;
+}
+
+.devinfo p{
+    text-align: justify;
+    padding: 5px;
+    margin: 0 50px;  
+    
+}
+
+h2{
+    margin-top: 15px;
+    margin-left: 50px;  
+}
+
+.skillContainer{
+    margin-bottom: 15px;
+    margin-left: 50px;  
+    
+}
+
+.skillitem{
+    display: flex;
+    align-items: center;
+}
+
+label{
+    display: inline-block;
+    width: 75px;
+    margin-top: 3px;
+}
+
+.skill{
+    background-color: #007bff;
+    height:7px;
+    margin-top: 3px;
+}
+
+.s9{
+    width: 400px;
+}
+    
+.s5{
+    width: 350px;
+}
+
+.s0{
+    width: 300px;
+}
+
+.s3{
+    width: 200px;
+}
+
+.ExpContainer{
+    display: flex;
+    width: 100vw;
+    margin-left: 50px;
+}
+
+h4{
+    text-align: center;
+}
+
+h4::after{
+    content: '';
+    background-color: black;
+    display: block;
+    width: 50px;
+    height: 2px;
+    margin-left: 275px;
+    margin-top: 5px;
+}
+
+.exp, .edu{
+    width: 45vw;
+    border: 1px solid #007bff;
+}
+
+.cname, .year, .pos{
+    font-weight: 900;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.cname::after{
+    content: '';
+    width: 100px;
+    height: 3px;
+    display: block;
+    background-color: #007bff;
+    margin-top: 5px;
+}
+
+
+.year{
+    border-bottom: 2px solid;
+}
+
+/*
+
+background: linear-gradient(to right, #007bff, #00c8ff);
+
+.roles{
+    margin-bottom: 10px;
+}
+
+.roles li{
+    text-align: justify;
+}
+*/
+
+
+/*********************************Contact me ********************************/
+
+
+h3{
+    font-size: 28px;
+    color: #007bff;
+}
+
+form{
+    border: 1px solid;
+    background: linear-gradient(180deg, #007bff, #bbd5eb);
+    width: 35vw;
+    padding: 22px;
+    height: 70vh;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#form-title{
+    margin-bottom: 15px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    color: aliceblue;
+}
+
+form input{
+    display: flex;
+    width: 32vw;
+    height: 6vh;
+    padding: 10px;
+    margin-bottom: 3px;
+}
+
+#inbtn{
+    padding: 7px 14px;
+    border-radius: 25px;
+    width: 10vw;
+    margin: 30px 0;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+#inbtn:hover{
+    background-color: #fff;
+    color: #007bff;
+}
+
+
+
+
+
+
+/*********************************Responsive styling ********************************/
+
+@media (max-width: 475px) {
+
+    .main{    
+        width: 100vw;
+    }
+
+    #sideimg{
+        display: block;
+    }
+
+    .devpic img{
+        display: none;
+    }
+
+    .aboutcontainer{
+        width: 100vw;
+        margin: 0;
+    }
+
+    .devinfo p{
+        padding: 2px;
+        margin: 0 0 0 50px;
+        
+    }
+
+    .ExpContainer{
+        flex-direction: column;
+    }
+
+    h4::after{
+        width: 50px;
+        height: 2px;
+        margin-left: 130px;
+    }
+
+    .exp, .edu{
+        width: 90vw;
+    }
+
+    .cname, .year, .pos{
+        font-weight: 500;
+        padding: 5px;
+    }
+    
+    .cname::after{
+        width: 100px;
+        height: 3px;
+        background-color: #007bff;
+    }
+    
+    
+    .year{
+        border-bottom: 2px solid;
+    }
+
+    .s9{
+        width: 250px;
+    }
+        
+    .s5{
+        width: 200px;
+    }
+    
+    .s0{
+        width: 150px;
+    }
+    
+    .s3{
+        width: 100px;
+    }
+
+
+    .hello{
+        font-size: 20px;    
+    }
+    
+    .name{
+        font-size: 15px;
+        font-weight: bold;
+        font-family: 'Fira Sans', sans-serif;
+    }
+    
+    .about{
+        font-size: 10px;
+        font-weight: 300;
+    }
+    
+    .moreabout{
+        font-size: 12px;
+        margin-top: 3px;
+    }
+
+    .formcontainer{
+        flex-direction: column;
+    }
+
+
+    form{
+        width: 90vw;
+        padding: 4px;
+        height: 70vh;
+    }
+    
+    #form-title{
+        margin-bottom: 10px;
+        font-weight: 300;
+    }
+    
+    form input{
+        display: flex;
+        width: 85vw;
+        height: 4vh;
+    } 
+
+    #inbtn{
+        padding: 3px 7px;
+        border-radius: 25px;
+        width: 25vw;
+        margin: 15px 0;
+        font-size: 10px;
+    }
+
+
+
+
+
+
+}
+
